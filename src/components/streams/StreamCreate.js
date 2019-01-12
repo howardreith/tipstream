@@ -2,11 +2,12 @@ import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 
 class StreamCreate extends React.Component {
-  renderInput({input, label}) {
+  renderInput({ input, label, meta }) {
     return (
       <div className="field">
         <label>{label}</label>
         <input {...input} />
+        <div>{meta.error}</div>
       </div>
     )
   }
@@ -26,6 +27,19 @@ onSubmit(formValues) {
   }
 }
 
+const validate =(formValues) => {
+  // Called every time the component is rendered
+  const errors = {}
+  if (!formValues.title) {
+    errors.title = 'Please enter a title'
+  }
+  if (!formValues.description) {
+    errors.description = 'Please enter a description'
+  }
+  return errors
+}
+
 export default reduxForm({
-  form: 'streamCreate'
+  form: 'streamCreate',
+  validate: validate
 })(StreamCreate)
