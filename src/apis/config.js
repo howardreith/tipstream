@@ -1,6 +1,6 @@
 let googleClientId
 const clientIds = {
-  production: '326254808743-if5pm1sdv2cqs25ikdkdcbdh360pkvbk.apps.googleusercontent.com',
+  production: '1050762786478-mhv4d9v3t4kuk117cuampvc4tpo3i02j.apps.googleusercontent.com',
   development: '326254808743-oqfspace8f7v5i0irb7bv37m7m1gn08l.apps.googleusercontent.com'
 }
 
