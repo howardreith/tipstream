@@ -32,6 +32,6 @@ These instructions assume you are running an up-to-date version of [npm](https:/
 
 7. Click "Create Stream", enter a title and a description in the fields, click "Submit", and then navigate to your stream on the list of streams. Alternatively, if you have already created a stream, simply navigate to it immediately.
 
-8. Configure your streaming settings for a custom streaming server streaming at http://localhost/live. Identify the ID of the stream you will be using by regarding the content after the last "/" in the URL at tipstream.co. For example, in https://tipstream.co/streams/1, the id is "1". Input this id as your "Stream Key".
+8. In your streaming software, configure your streaming settings for a custom streaming server streaming at http://localhost/live. Identify the ID of the stream you will be using by regarding the content after the last "/" in the URL at tipstream.co. For example, in https://tipstream.co/streams/1, the id is "1". Input this id as your "Stream Key".
 
 9. Begin streaming with your streaming software. Your content should appear on the TipStream video player within moments.
