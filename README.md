@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TipStream
 
-## Available Scripts
+TipStream is a tool for live-streaming video content to the web for users to view.
 
-In the project directory, you can run:
+It is built using React/Redux, Google Auth, [JSON-Server](https://www.npmjs.com/package/json-server), and [Node Media Server](https://github.com/illuspas/Node-Media-Server)
 
-### `npm start`
+## How to View
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Navigate to https://tipstream.co
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+2. Click on whichever stream you would like to view.
 
-### `npm test`
+3. Click the "play" button on the stream. Enjoy.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Note that any given stream may or may not be active at any given time. A broadcaster must be using the stream in order for you to view it.
 
-### `npm run build`
+## How to Broadcast
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These instructions assume you are running an up-to-date version of [npm](https://www.npmjs.com/get-npm). The commands should be run from the command line in Linux or Mac and in the Powershell in Windows.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+1. Clone or download the repository at https://github.com/howardreith/tipstreamvideo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. In the directory where you've placed the repository, install dependencies with "npm install".
 
-### `npm run eject`
+3. Initiate your local server with "npm start" in your installed directory. This will start a server at localhost:8000.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Open a streaming software capable of streaming using http-flv format. TipStream was tested using [OBS](https://obsproject.com/). Instructions for alternative streaming tools can be found at [the Node Media Server repository](https://www.npmjs.com/package/node-media-server). Make sure your audio and video devices are configured correctly in your streaming software.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Navigate to https://tipstream.co.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6. Log in using your google account by clicking the "Log in" button in the upper right corner.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+7. Click "Create Stream", enter a title and a description in the fields, click "Submit", and then navigate to your stream on the list of streams. Alternatively, if you have already created a stream, simply navigate to it immediately.
 
-## Learn More
+8. Configure your streaming settings for a custom streaming server streaming at http://localhost/live. Identify the ID of the stream you will be using by regarding the content after the last "/" in the URL at tipstream.co. For example, in https://tipstream.co/streams/1, the id is "1". Input this id as your "Stream Key".
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+9. Begin streaming with your streaming software. Your content should appear on the TipStream video player within moments.
