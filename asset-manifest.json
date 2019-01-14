@@ -1,11 +1,11 @@
 {
-  "main.js": "/tipstream/static/js/main.cab20797.chunk.js",
-  "main.js.map": "/tipstream/static/js/main.cab20797.chunk.js.map",
-  "static/js/1.38b20ac3.chunk.js": "/tipstream/static/js/1.38b20ac3.chunk.js",
-  "static/js/1.38b20ac3.chunk.js.map": "/tipstream/static/js/1.38b20ac3.chunk.js.map",
-  "runtime~main.js": "/tipstream/static/js/runtime~main.7d323b3e.js",
-  "runtime~main.js.map": "/tipstream/static/js/runtime~main.7d323b3e.js.map",
-  "index.html": "/tipstream/index.html",
-  "precache-manifest.39c6e537ba724d36e2626620d381e476.js": "/tipstream/precache-manifest.39c6e537ba724d36e2626620d381e476.js",
-  "service-worker.js": "/tipstream/service-worker.js"
+  "main.js": "/static/js/main.cab20797.chunk.js",
+  "main.js.map": "/static/js/main.cab20797.chunk.js.map",
+  "static/js/1.38b20ac3.chunk.js": "/static/js/1.38b20ac3.chunk.js",
+  "static/js/1.38b20ac3.chunk.js.map": "/static/js/1.38b20ac3.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.53ea32437ce0b12c90e82449f7620f99.js": "/precache-manifest.53ea32437ce0b12c90e82449f7620f99.js",
+  "service-worker.js": "/service-worker.js"
 }
